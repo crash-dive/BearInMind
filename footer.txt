@@ -1,0 +1,52 @@
+<footer>
+    <a href="#" id="privacy-link">Privacy Policy</a>
+
+    <address id="companies-house-address">Registered Office Saphires House</address>
+
+    <a href="#" id="terms-of-service-link">Terms of Service</a>
+</footer>
+
+
+footer {
+    display: flex;
+    padding: 10px 0;
+    border-top: 1px solid var(--gray-light);
+}
+
+    #privacy-link, #terms-of-service-link {
+        text-align: center;
+        color: var(--gray-dark);
+    }
+
+        #privacy-link:hover, #terms-of-service-link:hover {
+            text-decoration: underline;
+        }
+
+    #companies-house-address {
+        text-align: center;
+        font-style: normal;
+        color: var(--gray-dark);
+    }
+
+//Mobile
+footer {
+    flex-direction: column;
+}
+
+    #privacy-link, #companies-house-address, #terms-of-service-link {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+//Desktop
+footer {
+    flex-direction: row;
+}
+
+    #privacy-link, #terms-of-service-link {
+        width: 15%;
+    }
+
+    #companies-house-address {
+        width: 70%;
+    }
